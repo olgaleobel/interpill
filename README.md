@@ -17,7 +17,10 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 ## 1. Prototype & Architecture
 
-- **Early low-fidelity Figma prototype**  
+- **Early low-fidelity Figma prototype**
+
+Reflected both the visual appearance of the interface and the links between key components of the application. During further development, the design underwent individual changes due to refinement of requirements and technical constraints identified at the implementation stage.
+
   ![Prototype](assets/fig_01_prototype.png)
 
 
