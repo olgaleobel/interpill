@@ -21,7 +21,10 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
   ![Prototype](assets/fig_01_prototype.png)
 
 
-- **High-level architecture of the mobile application**  
+- **High-level architecture of the mobile application**
+
+Illustrates the main functional layers of the mobile application, their interactions, and the boundaries between local processing and external services. The mobile application is structured into several logical layers, each responsible for a distinct aspect of the system’s functionality. This layered organisation is reflected both in the architectural model and in the package structure.
+
   ![Architecture](assets/fig_02_architecture.png)
 
 
