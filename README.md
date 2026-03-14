@@ -103,28 +103,43 @@ Illustrate quantitative feedback on Ease of Use, Interface & Satisfaction, and U
 
 Selected fragments illustrating the implementation style and key components of the interaction-analysis pipeline.
 
-- **Core interaction aggregation**  
+- **Core interaction aggregation**
+  This fragment presents the core logic of the interaction analysis. The service receives a normalised list of medicinal products and, optionally, the patient context. A multi-layer aggregation of results from several sources is then performed: official interaction data (RxNav), fallback sources (OpenFDA and DailyMed), as well as rules based on pharmacological classes and personal factors. The implementation is designed in a defensive manner: the failure of a single layer does not block the final outcome. At the output, a unified list of findings (InteractionItem) is generated, deduplication by the medicine pair and the source is carried out, and explanatory notes are formed (for example, on the possible duplication of active ingredients).
+  
   [`interaction_service_excerpt.kt`](code-excerpts/interaction_service_excerpt.kt)
 
-- **Input normalisation & RxNorm enrichment**  
+- **Input normalisation & RxNorm enrichment**
+  This fragment illustrates the transition from user input (string medication names) to structures suitable for calculating interactions. For each name, a “display base” is extracted, after which normalisation for the RxNorm query is performed (focusing on INN and removing noise). After obtaining the RXCUI, the active ingredients are retrieved; the assembled list of Drug is then passed to the InteractionService, which performs the aggregated analysis.
+  
   [`interactions_controller_excerpt.kt`](code-excerpts/interactions_controller_excerpt.kt)
 
-- **Result data structures**  
+- **Result data structures**
+  The fragment records the internal data structures used for unifying the result across sources: a single severity enum (InteractionSeverity), the result element InteractionItem (the pair of medicinal products, severity, description, source), and the aggregated container InteractionResult (the list of findings and the list of notes).
+  
   [`interaction_models_excerpt.kt`](code-excerpts/interaction_models_excerpt.kt)
 
-- **Built-in class rules**  
+- **Built-in class rules**
+  This fragment presents a minimal built-in rule set for clinically important drug-class interactions. The rules are embedded directly in the client to ensure that critical warnings can still be generated when external rule definitions (for example, a remote JSON rule set) are unavailable. Each medicinal product is matched against a small set of class keywords using both the user-facing query string and the resolved active ingredients. The evaluator then examines all pairs of medicinal products and emits a high-severity InteractionItem when a known clinically critical class combination is detected.
+  
   [`built_in_class_rules_excerpt.kt`](code-excerpts/built_in_class_rules_excerpt.kt)
 
-- **Patient-aware rules**  
+- **User-aware rules**
+- This fragment implements a user-aware rule layer that supplements the interaction analysis using profile data (allergies, chronic conditions, and pregnancy/breastfeeding status). The logic produces “self-pair” findings (a == b), enabling the presentation layer to indicate risks associated with a specific medicinal product even when the issue does not constitute a drug–drug interaction but represents a patient–drug contraindication or caution. The evaluator performs string matching over normalised tokens derived from the medicine name and active ingredients and generates warnings with appropriate severity levels (for example, HIGH for allergy matches, MODERATE for diabetes-related dysglycaemia risk associated with fluoroquinolones, and LOW for general applicability notes).  
   [`patient_rules_excerpt.kt`](code-excerpts/patient_rules_excerpt.kt)
 
-- **Drug name normalisation**  
+- **Drug name normalisation**
+  This listing presents the normalisation logic used to process user-entered medicine names into a UK-oriented INN representation (NHS/BNF style). The normaliser removes dosage- and form-related elements (for example, strengths, pack sizes, and release markers), preserves clinically significant terms (in particular, nitrate-related patterns), and applies alias canonicalisation (brand names and US variants mapped to UK INN). The implementation also supports an external, editable alias layer (for example, read from JSON), which has precedence over the built-in mapping. The resulting normalised names are used for search queries, RXCUI resolution, and user-facing suggestions.
+  
   [`name_normalizer_excerpt.kt`](code-excerpts/name_normalizer_excerpt.kt)
 
-- **RxNorm enrichment**  
+- **RxNorm enrichment**
+This fragment illustrates how Interpill resolves a normalised medicine name (UK-oriented INN) to an RxNorm identifier (RXCUI) and subsequently extracts active ingredients at the IN (Ingredient) level. The RXCUI lookup follows a staged fallback procedure (selection of the preferred concept from drugs.json, direct lookup via rxcui.json, and approximate matching via approximateTerm). Ingredient extraction uses allrelated.json and filters for IN concepts, which are used in the subsequent interaction checks and rule-based logic.
+
   [`rxnorm_api_excerpt.kt`](code-excerpts/rxnorm_api_excerpt.kt)
 
-- **OpenFDA label matching**  
+- **OpenFDA label matching**
+  This fragment illustrates the procedure used to match a medicine name (typically a normalised INN) to an OpenFDA drug label record. The lookup is performed through staged queries: exact matching against generic or substance names, wildcard matching, brand-name queries, and a full-text fallback. After a record is retrieved, the label is converted into a unified DrugLabel structure containing an ordered map of sections (for example, “Indications and Usage”, “Warnings and Precautions”, and “Drug Interactions”). The ordering of sections is applied consistently in the presentation layer.
+  
   [`openfda_api_excerpt.kt`](code-excerpts/openfda_api_excerpt.kt)
 
 *Interpill demonstrates end-to-end design, implementation, and evaluation of a personalised drug interaction mobile application.*
