@@ -4,9 +4,10 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 - Multi-source data retrieval and validation (RxNorm, OpenFDA, DailyMed)
 - Interaction analysis logic
+- UX design and iterative prototyping
 - Clear, structured outputs for users
 - Usability study (N=34, MAUQ-based survey)
-- UX design and iterative prototyping
+
 
 **Demo video:** [Interpill Demo](https://youtu.be/krAb9nkezV8)  
 
