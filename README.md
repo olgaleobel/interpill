@@ -19,11 +19,14 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 - **Early low-fidelity Figma prototype**  
   ![Prototype](assets/fig_01_prototype.png)
 
+
 - **High-level architecture of the mobile application**  
   ![Architecture](assets/fig_02_architecture.png)
 
+
 - **Overall workflow of the test bed**  
   ![Workflow](assets/fig_03_workflow.png)
+
 
 - **Interaction-analysis pipeline**  
   ![Pipeline](assets/fig_04_pipeline.png)
@@ -34,10 +37,11 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 ## 2. Key User Screens & Scenarios
 
-- **Combined user screens** (Main screen, Medication Schedule, OCR-based recognition, User Profile)  
+- **Combined user screens** (Main screen, OCR-based recognition, User Profile, Medication Schedule etc.)  
   ![User Screens Mix](assets/fig_05_user_screens.png)
 
 *This image demonstrates the core user interface elements and main user flows.*
+
 
 - **Interaction result scenarios** (risk indicators + AI summary)  
   ![Interaction Scenarios](assets/fig_06_interaction_result.png)
@@ -69,36 +73,3 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 ---
 
 *Interpill demonstrates end-to-end design, implementation, and evaluation of a personalised drug interaction mobile application.*
-
-
-
-
-# interpill
-
-Designed and built the full mobile prototype independently as a final-year project, including:
-• data pipeline design
-• interaction analysis logic
-• API integration
-• UX structure
-• usability testing
-
-Usability study conducted with 34 participants (MAUQ-based survey).
-Quantitative and qualitative feedback analysed.
-
-Source code will be published after academic assessment is completed.
-This repository currently serves as a project overview and portfolio reference.
-
-Interpill demo: https://youtu.be/krAb9nkezV8
-
-Supporting components (open repositories)
-
-Some supporting components of the project are available as separate open repositories:
-
-• AI proxy service (request routing and key isolation):
-https://github.com/olgaleobel/interpill-ai-proxy
-
-• Open data alias mapping used for drug name normalisation:
-https://github.com/olgaleobel/interpill-open-data/blob/main/assets/aliases_extra.json
-
-• Rule-based interaction logic and class-level safety rules (public subset):
-https://github.com/olgaleobel/interpill-open-data/blob/main/assets/class_rules.json
