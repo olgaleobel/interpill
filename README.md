@@ -11,6 +11,8 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 **Demo video:** [Interpill Demo](https://youtu.be/krAb9nkezV8)  
 
+**Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/
+
 **Source code** will be published after academic assessment. This repository currently serves as a project overview and portfolio reference.
 
 ---
