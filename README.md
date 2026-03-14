@@ -25,11 +25,22 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
   ![Architecture](assets/fig_02_architecture.png)
 
 
-- **Overall workflow of the test bed**  
+- **Overall workflow of the test bed**
+
+Full end-to-end workflow of the processing pipeline illustrates the complete sequence from medicine input (typed or obtained via OCR) through name normalisation, alias resolution, RXCUI lookup, and external-source querying, to the branch between the instructions module and the interaction-analysis module, and finally to the presentation of results on the application screens. The diagram represents the high-level flow of data across the functional components described in this subsection.
+  
   ![Workflow](assets/fig_03_workflow.png)
 
 
-- **Interaction-analysis pipeline**  
+- **Interaction-analysis pipeline**
+
+The user provides two types of input: medication names and patient profile data (allergies and chronic conditions). These inputs follow separate processing paths. Medication names are passed to the InteractionsController component, while profile data are stored within the user profile and subsequently accessed by patient-specific rule sets during analysis. 
+
+The InteractionsController component is responsible for preparing medication data for analysis. It normalises the entered names by mapping brand names and synonyms to standard International Nonproprietary Names (INNs), applies alias resolution, performs RXCUI lookup via RxNorm, and extracts the corresponding lists of active ingredients. As its output, it produces a list of normalised Drug objects, which are then passed to the central interaction engine. 
+
+The core interaction engine, implemented as InteractionServiceDefault, acts as an aggregator of all interaction sources. At this stage, interaction data are obtained in parallel from the RxNav API, OpenFDA, DailyMed, class-based rule sets, and patient-specific rules. Each source returns a set of interaction items describing a drug pair, an estimated risk level, and a brief rationale (such as an official interaction record, a labelling excerpt, a class-based rule, or a user-related constraint). The aggregation stage performs merging and deduplication of overlapping interaction signals originating from different sources. Interaction items referring to the same drug pair are combined, and a consolidated set of notes is formed. These notes may include, for example, indications of duplicate active ingredients, applied heuristic rules, or patient-specific risk factors.
+
+  
   ![Pipeline](assets/fig_04_pipeline.png)
 
 *These diagrams illustrate the project structure, data entities, and the interaction-analysis workflow.*
