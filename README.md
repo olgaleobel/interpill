@@ -13,8 +13,6 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 **Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/
 
-**Source code** will be published after academic assessment. This repository currently serves as a project overview and portfolio reference.
-
 ---
 
 ## 1. Prototype & Architecture
@@ -100,5 +98,33 @@ Illustrate quantitative feedback on Ease of Use, Interface & Satisfaction, and U
   [https://github.com/olgaleobel/interpill-open-data/blob/main/assets/class_rules.json](https://github.com/olgaleobel/interpill-open-data/blob/main/assets/class_rules.json)  
 
 ---
+
+## 5. Code Excerpts
+
+Selected fragments illustrating the implementation style and key components of the interaction-analysis pipeline.
+
+- **Core interaction aggregation**  
+  [`interaction_service_excerpt.kt`](code-excerpts/interaction_service_excerpt.kt)
+
+- **Input normalisation & RxNorm enrichment**  
+  [`interactions_controller_excerpt.kt`](code-excerpts/interactions_controller_excerpt.kt)
+
+- **Result data structures**  
+  [`interaction_models_excerpt.kt`](code-excerpts/interaction_models_excerpt.kt)
+
+- **Built-in class rules**  
+  [`built_in_class_rules_excerpt.kt`](code-excerpts/built_in_class_rules_excerpt.kt)
+
+- **Patient-aware rules**  
+  [`patient_rules_excerpt.kt`](code-excerpts/patient_rules_excerpt.kt)
+
+- **Drug name normalisation**  
+  [`name_normalizer_excerpt.kt`](code-excerpts/name_normalizer_excerpt.kt)
+
+- **RxNorm enrichment**  
+  [`rxnorm_api_excerpt.kt`](code-excerpts/rxnorm_api_excerpt.kt)
+
+- **OpenFDA label matching**  
+  [`openfda_api_excerpt.kt`](code-excerpts/openfda_api_excerpt.kt)
 
 *Interpill demonstrates end-to-end design, implementation, and evaluation of a personalised drug interaction mobile application.*
