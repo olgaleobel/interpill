@@ -38,6 +38,10 @@ Designed and built independently as a final-year project, **Interpill** is a Kot
 
 ## 2. Key User Screens & Scenarios
 
+Scenario 1 illustrates how recorded user allergies are incorporated into the interaction analysis workflow. The screenshots show a user profile containing documented allergy information and a scheduled medication entry in the My Meds Hub. When the medication is analysed, the system takes the allergy data into account, resulting in a contraindication warning displayed on the interaction results screen.
+
+Scenario 2 demonstrates how recorded chronic conditions affect the outcome of interaction analysis. The screenshots show a user profile with a documented chronic condition and the subsequent analysis of a selected medication. The presence of the condition is reflected in the interaction results, leading to a contraindication warning and condition-specific explanatory text.
+
 - **Combined user screens** (Main screen, OCR-based recognition, User Profile, Medication Schedule etc.)  
   ![User Screens Mix](assets/fig_05_user_screens.png)
 
