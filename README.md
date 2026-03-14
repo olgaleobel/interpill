@@ -49,16 +49,18 @@ The core interaction engine, implemented as InteractionServiceDefault, acts as a
   
   ![Pipeline](assets/fig_04_pipeline.png)
 
-*These diagrams illustrate the project structure, data entities, and the interaction-analysis workflow.*
 
 ---
 
 ## 2. Key User Screens & Scenarios
 
-- **Combined user screens** (Main screen, OCR-based recognition, User Profile, Medication Schedule etc.)  
+- **Combined user screens** (Main screen, OCR-based recognition, User Profile, Medication Schedule etc.)
+- 
+Demonstrates the core user interface elements and main user flows.
+
   ![User Screens Mix](assets/fig_05_user_screens.png)
 
-*This image demonstrates the core user interface elements and main user flows.*
+
 
 
 - **Interaction result scenarios** (risk indicators + AI summary)
