@@ -77,10 +77,12 @@ Demonstrates the core user interface elements and main user flows.
 
 ## 3. Usability Study & Findings
 
-- **Bar charts from Google Forms** (MAUQ subscale scores & standard deviation)  
+- **Bar charts from Google Forms**
+
+Illustrate quantitative feedback on Ease of Use, Interface & Satisfaction, and Usefulness, collected from 34 participants using the MAUQ-based survey.
   ![MAUQ Scores](assets/fig_07_mauq_scores.png)
 
-*These bar charts illustrate quantitative feedback on Ease of Use, Interface & Satisfaction, and Usefulness, collected from 34 participants using the MAUQ-based survey.*
+
 
 ---
 
