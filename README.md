@@ -20,6 +20,14 @@ The project includes:
 
 **Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/
 
+## Project Scope and Limitations
+
+Interpill is implemented as a research prototype. The Android version contains the most complete implementation of the functionality. The iOS and Desktop versions are partially implemented as part of the Kotlin Multiplatform architecture demonstration.
+
+Certain aspects typical of production healthcare systems were intentionally outside the scope of this project. In particular, comprehensive cybersecurity measures, full regulatory compliance, and integration with clinical information systems were not addressed, as the primary objective of the study was the design and evaluation of a user-oriented prototype for drug–drug interaction awareness.
+
+The system therefore represents a proof-of-concept designed to explore data aggregation from open pharmaceutical sources, personalised interaction analysis, and user-centred presentation of risk information.
+
 ---
 
 ## 1. Prototype & Architecture
