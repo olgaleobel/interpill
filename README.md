@@ -8,6 +8,14 @@ An AI module provides an additional explanatory layer that translates technical 
 
 Interpill is intended as a decision-support and awareness tool. It does not provide medical diagnosis and is not a substitute for professional medical advice.
 
+Key usage scenarios include:
+
+-	checking interactions between several medicines taken simultaneously, including with consideration of individual user factors (allergies and chronic diseases);
+-	obtaining instructions and warnings for a specific medicine;
+-	adding medicines to a personal list and intake schedule with basic indication of increased risks;
+-	using OCR scanning to enter the name of a medicine from its packaging.
+
+
 The project includes:
 
 - Multi-source data retrieval and validation (RxNorm, OpenFDA, DailyMed)
