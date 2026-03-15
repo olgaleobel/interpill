@@ -1,3 +1,7 @@
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
+
+```kotlin
+
 package com.olga.interpill.domain
 
 import com.olga.interpill.data.model.Drug
@@ -19,3 +23,7 @@ data class InteractionResult(
     val items: List<InteractionItem> = emptyList(), // consolidated interaction list
     val notes: List<String> = emptyList()           // additional safety notes
 )
+
+``` 
+
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
