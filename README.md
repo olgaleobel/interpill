@@ -20,6 +20,7 @@ The project includes:
 
 **Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/<br>
 
+&nbsp;
 
 
 > **Project Scope and Limitations**
