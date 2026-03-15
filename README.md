@@ -133,7 +133,7 @@ Selected fragments illustrating the implementation style and key components of t
 - **Core interaction aggregation**
 This fragment presents the core logic of the interaction analysis. The service receives a normalised list of medicinal products and, optionally, the patient context. A multi-layer aggregation of results from several sources is then performed: official interaction data (RxNav), fallback sources (OpenFDA and DailyMed), as well as rules based on pharmacological classes and personal factors. The implementation is designed in a defensive manner: the failure of a single layer does not block the final outcome. At the output, a unified list of findings (InteractionItem) is generated, deduplication by the medicine pair and the source is carried out, and explanatory notes are formed (for example, on the possible duplication of active ingredients).
   
-  [`interaction_service_excerpt.kt`](code-excerpts/interaction_service_excerpt.kt)
+  [`interaction_service_excerpt.kt`](code-excerpts/interaction_service_excerpt.md)
 
 - **Input normalisation & RxNorm enrichment**
 This fragment illustrates the transition from user input (string medication names) to structures suitable for calculating interactions. For each name, a “display base” is extracted, after which normalisation for the RxNorm query is performed (focusing on INN and removing noise). After obtaining the RXCUI, the active ingredients are retrieved; the assembled list of Drug is then passed to the InteractionService, which performs the aggregated analysis.
