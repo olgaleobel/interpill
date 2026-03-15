@@ -69,6 +69,7 @@ The core interaction engine, implemented as InteractionServiceDefault, acts as a
 ## 2. Key User Screens & Scenarios
 
 - **Combined user screens** (Main screen, OCR-based recognition, User Profile, Medication Schedule etc.)
+  
 Demonstrates the core user interface elements.
 
   ![User Screens Mix](assets/fig_05_user_screens.png)
