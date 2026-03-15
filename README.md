@@ -1,11 +1,18 @@
 # Interpill — Personalised Drug–Drug Interaction Prototype
 
-Designed and built independently as a final-year project, **Interpill** is a Kotlin Multiplatform mobile prototype for personalised drug–drug interaction analysis. The project includes:
+**Interpill** is a Kotlin Multiplatform mobile prototype designed to help users check potential interactions between medicinal products.
+
+The application aggregates data from multiple open pharmaceutical sources (including RxNorm, OpenFDA, and DailyMed) and performs a rule-based interaction analysis. The system also considers user-specific factors such as allergies and chronic conditions stored in the user profile.
+
+An AI module provides an additional explanatory layer that translates technical interaction results into clear user-oriented summaries.
+
+Interpill is intended as a decision-support and awareness tool. It does not provide medical diagnosis and is not a substitute for professional medical advice.
+
+The project includes:
 
 - Multi-source data retrieval and validation (RxNorm, OpenFDA, DailyMed)
 - Interaction analysis logic
 - UX design and iterative prototyping
-- Clear, structured outputs for users
 - Usability study (N=34, MAUQ-based survey)
 
 
