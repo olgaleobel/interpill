@@ -29,7 +29,7 @@ The project includes:
 >
 > Certain aspects typical of production healthcare systems were intentionally outside the scope of this project. In particular, comprehensive cybersecurity measures, full regulatory compliance, and integration with clinical information systems were not addressed, as the primary objective of the study was the design and evaluation of a user-oriented prototype for drug–drug interaction awareness.
 ---
-
+&nbsp;
 ## 1. Prototype & Architecture
 
 - **Early low-fidelity Figma prototype**
