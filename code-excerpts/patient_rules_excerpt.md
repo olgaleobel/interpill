@@ -1,3 +1,8 @@
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
+
+```kotlin
+
+
 package com.olga.interpill.domain.rules
 
 import com.olga.interpill.data.model.Drug
@@ -133,3 +138,7 @@ object PatientRules {
         return out
     }
 }
+
+``` 
+
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
