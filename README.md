@@ -1,3 +1,5 @@
+⬅️ [Back to main page](https://github.com/olgaleobel/
+
 # Interpill — Personalised Drug–Drug Interaction Prototype
 
 **Interpill** is a Kotlin Multiplatform mobile prototype encompassing 15 interactive screens, designed to help users identify potential interactions between medicinal products.
@@ -168,3 +170,5 @@ This fragment illustrates the procedure used to match a medicine name (typically
   [`openfda_api_excerpt.kt`](code-excerpts/openfda_api_excerpt.kt)
 
 *Interpill demonstrates end-to-end design, implementation, and evaluation of a personalised drug interaction mobile application.*
+
+⬅️ [Back to main page](https://github.com/olgaleobel/
