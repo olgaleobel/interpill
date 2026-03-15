@@ -1,3 +1,7 @@
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
+
+```kotlin
+
 package com.olga.interpill.domain
 
 import com.olga.interpill.data.api.RxNormApi
@@ -45,3 +49,7 @@ class InteractionsController(
         return service.checkInteractions(meds, patient)
     }
 }
+
+``` 
+
+[⬅️ Back to Interpill Project page](https://github.com/olgaleobel/interpill)
