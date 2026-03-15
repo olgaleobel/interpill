@@ -1,4 +1,4 @@
-⬅️ [Back to main page](https://github.com/olgaleobel/
+[⬅️ Back to main page](https://github.com/olgaleobel/)
 
 # Interpill — Personalised Drug–Drug Interaction Prototype
 
@@ -171,4 +171,4 @@ This fragment illustrates the procedure used to match a medicine name (typically
 
 *Interpill demonstrates end-to-end design, implementation, and evaluation of a personalised drug interaction mobile application.*
 
-⬅️ [Back to main page](https://github.com/olgaleobel/
+[⬅️ Back to main page](https://github.com/olgaleobel/)
