@@ -18,7 +18,7 @@ The project includes:
 
 **Demo video:** [Interpill Demo](https://youtu.be/krAb9nkezV8)  
 
-**Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/<br>
+**Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/
 
 &nbsp;
 
