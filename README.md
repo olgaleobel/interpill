@@ -23,7 +23,7 @@ The project includes:
 **Test APK and testing scenarios:** https://olgaleobel.github.io/Interpill-App-Testing/
 
 <sub>
-**Project Scope and Limitations**
+Project Scope and Limitations
 
 Interpill is implemented as a research prototype. The Android version contains the most complete implementation of the functionality, while the iOS and Desktop versions are partially implemented as part of the Kotlin Multiplatform architecture demonstration.
 
