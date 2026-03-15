@@ -94,6 +94,7 @@ Demonstrates the core user interface elements.
 - **Bar charts from Google Forms**
 
 Illustrate quantitative feedback on Ease of Use, Interface & Satisfaction, and Usefulness, collected from 34 participants using the MAUQ-based survey.
+&nbsp;
   ![MAUQ Scores](assets/fig_07_mauq_scores.png)
 
 
